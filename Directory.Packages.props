@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <!--Testing Packages-->
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.7.0.110445">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageVersion>
+  </ItemGroup>
+</Project>
